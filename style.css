@@ -1,0 +1,100 @@
+:root {
+  /* Colors */
+  --dark-green: #283739;
+  --medium-green: #2c5d63; 
+  --clear-green: #7bc67b; 
+  --light-green: #a2c11c; 
+  --soft-grey: #e0e0e0; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", serif;
+    color: rgb(214, 214, 214);
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 40px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-header .avocado-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    background-image: url('./assets/icons/avocado.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nav-header a {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link {
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+    width: auto;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  /* Navbar */
+.header {
+  background-color: var(--dark-green);
+  width: 100%;
+}
+
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header span {
+  color: var(--clear-green);
+}
+
+.nav-header h2 {
+  font-size: 2.7rem;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  border: transparent;
+  background: transparent;
+  color: white;
+  font-size: 2.8rem;
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+}
+
+.nav-open {
+  height: 100vh;
+}
