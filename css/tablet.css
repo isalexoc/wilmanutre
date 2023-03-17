@@ -32,8 +32,67 @@
     padding: 0 15px;
   }
 
-  .nav-links span {
-    background: var(--medium-green);
-    padding: 8px 15px;
-    border-radius: 4px;
+  .nav-links li a {
+    padding: 18px 10px;
+    display: block;
+  }
+
+  .nav-links li a:hover {
+    background-color: var(--medium-green);
+    border-radius: 10px;
+  }
+
+  .service-grid__item:hover {
+    border-color: var(--soft-grey);
+  }
+
+/*BLOG INGO SECTION*/
+
+  .blog-info {
+    background: linear-gradient(358deg, #edffee, transparent);
+  }
+
+  .blog-info__container {
+    flex-direction: row;
+    max-width: 930px;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  .blog-info-hero {
+    width: 50%;
+  }
+
+  .blog-info-links {
+    width: 50%;
+  }
+
+  .blog-info-hero-text > *{
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+
+  .link-a > * {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 45% 55%;
+    grid-template-areas:
+        "logo logo"
+        "newsletter newsletter"
+        "topics links"
+        "social global"
+        "footer-bottom footer-bottom";
+    grid-template-rows: auto;
+    padding: 0 20px;
+  }
+
+  .newsletter-input {
+    width: 600px;
+  }
+
+  .footer-newsletter {
+    border-bottom: none;
   }
